@@ -20,7 +20,7 @@
     "bootstrap": "^5.3.0",
     "gatsby": "^4.00.0",
     "gatsby-plugin-mdx": "^4.00.0",
-    "gatsby-plugin-sass": "^6.10.0",
+    "gatsby-plugin-sass": "^5.00.0",
     "gatsby-source-filesystem": "^4.00.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
