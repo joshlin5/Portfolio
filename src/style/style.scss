@@ -1,0 +1,126 @@
+@use 'colors';
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/mixins/banner";
+
+/* Configuration */
+@import "~bootstrap/scss/functions";
+
+$navbar-padding-y: 0;
+$dark: #000000;
+
+@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+/* Layout & components */
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
+
+/* Helpers */
+@import "~bootstrap/scss/helpers";
+
+/* Utilities */
+@import "~bootstrap/scss/utilities/api";
+
+@import "fonts";
+@import "colors"; 
+
+
+.home {
+    background-image: url(../images/plant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: #eae6e7;
+}
+
+.title {
+    font-size: 500%;
+}
+
+.jobTitle {
+    font-size: 200%;
+}
+
+.normalTitle {
+    font-size: 375%;
+}
+
+.aboutSubTitle{
+    margin-bottom: 3rem;
+}
+
+.projectsSubTitle{
+    font-size: 125%;
+}
+
+.aboutText {
+    font-size: 18px;
+}
+
+.middle-container {
+    flex-grow: 1;
+}
+
+.outer-container {
+    flex-grow: auto;
+}
+
+.link {
+    color: gray;
+}
+
+.workTitle {
+    color: lightgray;
+}
+
+.name {
+    color: white;
+}
+
+.verticalCenter {
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    background-color: lightgray;
+    inline-size: auto;
+    border-radius: 25px;
+    padding: 2rem 3rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
