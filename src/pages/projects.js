@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from 'react'
-import { Container, Button, Card, Row} from 'react-bootstrap';
+import { Container, Button, Card, Row, Col} from 'react-bootstrap';
 import BNavbar from '../components/BNavbar';
 import AFooter from "../components/AFooter";
 import '../style/style.scss';
@@ -13,9 +13,9 @@ export default function projectsPage() {
       <h1 className='normaltitle text-dark'>Projects</h1>
       <p className='projectsSubTitle text-dark'>Here you will find some of my personal and major academic projects</p>
       <Container className="justify-content-md-center">
-        <Row xs={1} md={2} className="justify-content-md-center g-4">
-
-            <Card className="m-4" style={{ width: '18rem' }}>
+        <Row xs={1} md={4} className="d-flex justify-content-md-center g-4">
+          <Col className='d-flex'>
+            <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
                 <Card.Title>Portfolio Website</Card.Title>
@@ -28,8 +28,9 @@ export default function projectsPage() {
                 <Button href="https://github.com/joshlin5/Portfolio" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
-
-            <Card className="m-4" style={{ width: '18rem' }}>
+            </Col>
+            <Col className='d-flex'>
+            <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
                 <Card.Title>Automated Pipeline Runner</Card.Title>
@@ -41,8 +42,9 @@ export default function projectsPage() {
                 <Button href="https://github.com/joshlin5/App-Pipeline" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
-
-            <Card className="m-4" style={{ width: '18rem' }}>
+            </Col>
+            <Col className='d-flex'>
+            <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
                 <Card.Title>Automated Jupyter Notebook Deployment</Card.Title>
@@ -55,8 +57,9 @@ export default function projectsPage() {
                 <Button href="https://github.com/joshlin5/Automated-Jupyter-Notebook-Deployment" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
-
-        <Card className="m-4" style={{ width: '18rem' }}>
+            </Col>
+            <Col className='d-flex'>
+            <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
                 <Card.Title>Truck Driver Rewards Android App</Card.Title>
@@ -68,8 +71,9 @@ export default function projectsPage() {
                 <Button href="https://github.com/joshlin5/Driver_1" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
-
-            <Card className="m-4" style={{ width: '18rem' }}>
+            </Col>
+            <Col className='d-flex'>
+            <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
                 <Card.Title>Pizza Resturant Database</Card.Title>
@@ -81,7 +85,7 @@ export default function projectsPage() {
                 <Button href="https://github.com/joshlin5/Pizza-Resturant-Database" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
-
+            </Col>
         </Row>
       </Container>
       <AFooter/>
