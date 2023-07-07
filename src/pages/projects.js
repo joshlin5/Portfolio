@@ -12,7 +12,7 @@ export default function projectsPage() {
       <BNavbar/>
       <h1 className='normaltitle text-dark'>Projects</h1>
       <p className='projectsSubTitle text-dark'>Here you will find some of my personal and major academic projects</p>
-      <Container className="">
+      <Container className="justify-content-md-center">
         <Row xs={1} md={2} className="justify-content-md-center g-4">
 
             <Card className="m-4" style={{ width: '18rem' }}>
@@ -25,7 +25,7 @@ export default function projectsPage() {
                   <p> This project involves JavaScript, React, Bootstrap, HTML, and CSS. </p>
                   You are currently viewing this project!
                 </Card.Text>
-                <Button href="/projects" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
+                <Button href="https://github.com/joshlin5/Portfolio" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
 
@@ -78,7 +78,7 @@ export default function projectsPage() {
                   <p> This course project was completed in a month with a team of 2 using MySQL and Java.</p>
                   <p> Some elements of this project creating, populating, viewing, and dropping tables in SQl and Java.</p>
                 </Card.Text>
-                <Button href="https://github.com/dndsmith/cpsc4620" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
+                <Button href="https://github.com/joshlin5/Pizza-Resturant-Database" target="_blank" rel="noopener noreferrer" variant="primary">Github</Button>
               </Card.Body>
             </Card>
 
