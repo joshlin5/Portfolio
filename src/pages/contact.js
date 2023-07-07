@@ -67,7 +67,7 @@ const handleSubmit = (e) => {
         <Form>
           <Form.Group className="mb-3 mt-4 mx-3">
             <Form.Label>Name</Form.Label>
-            <Form.Control onChange= {handleChange} value={formData?.name} name="name" type="name" placeholder="Enter Your Name" />
+            <Form.Control onChange= {handleChange} value={formData?.name} name="name" type="text" placeholder="Enter Your Name" />
           </Form.Group>
           <Form.Group className="mb-3 mx-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email</Form.Label>
@@ -75,7 +75,7 @@ const handleSubmit = (e) => {
           </Form.Group>
           <Form.Group className="mb-5 mx-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control onChange= {handleChange} value={formData?.message} name="message" type="message" as="textarea" placeholder="Enter Your Message" rows={3} />
+            <Form.Control onChange= {handleChange} value={formData?.message} name="message" type="text" as="textarea" placeholder="Enter Your Message" rows={3} />
           </Form.Group>
           <Button className="mb-3" onClick={handleSubmit} variant="primary" type="submit">Submit form</Button>
         </Form>
