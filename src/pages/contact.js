@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from 'react'
-import { Container, Form, Button} from 'react-bootstrap';
+import { Container, Form, Button, InputGroup} from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import BNavbar from '../components/BNavbar';
 import AFooter from "../components/AFooter";
@@ -28,7 +28,7 @@ const handleChange = (e) => {
     updateFormData({
       ...formData,
 
-      [e.target.name]: e.target.value.trim()
+      [e.target.name]: e.target.value
     });
   };
 
@@ -63,19 +63,20 @@ const handleSubmit = (e) => {
   return (
     <body className="d-flex flex-column text-center min-vh-100">
       <BNavbar/>
+      <h1 className='normaltitle text-dark'>Contact Form</h1>
       <Container className='w-50 h-100 bg-light'>
         <Form>
           <Form.Group className="mb-3 mt-4 mx-3">
             <Form.Label>Name</Form.Label>
             <Form.Control onChange= {handleChange} value={formData?.name} name="name" type="text" placeholder="Enter Your Name" />
           </Form.Group>
-          <Form.Group className="mb-3 mx-3" controlId="exampleForm.ControlInput1">
+          <Form.Group className="mb-3 mx-3">
             <Form.Label>Email</Form.Label>
             <Form.Control onChange= {handleChange} value={formData?.email} name="email" type="email" placeholder="Enter Your Email" />
           </Form.Group>
-          <Form.Group className="mb-5 mx-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Group className="mb-5 mx-3 h-50">
             <Form.Label>Message</Form.Label>
-            <Form.Control onChange= {handleChange} value={formData?.message} name="message" type="text" as="textarea" placeholder="Enter Your Message" rows={3} />
+            <Form.Control onChange= {handleChange} value={formData?.message} name="message" type="text" as="textarea" placeholder="Enter Your Message" rows={3}/>
           </Form.Group>
           <Button className="mb-3" onClick={handleSubmit} variant="primary" type="submit">Submit form</Button>
         </Form>
