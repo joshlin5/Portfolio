@@ -13,7 +13,7 @@ export default function projectsPage() {
       <h1 className='normaltitle text-dark'>Projects</h1>
       <p className='projectsSubTitle text-dark'>Here you will find some of my personal and major academic projects</p>
       <Container className="justify-content-md-center">
-        <Row xs={1} md={4} className="d-flex justify-content-md-center g-4">
+        <Row xs={1} sm={2} md={2} lg={3} xl={4} xxl={5} className="d-flex justify-content-md-center g-4">
           <Col className='d-flex'>
             <Card>
               <Card.Img variant="top" src="" />

@@ -12,22 +12,23 @@ export default function aboutPage() {
       <BNavbar/>
       <h1 className='normalTitle text-dark'>About Me</h1>
       <Container className="">
-        <Row class='text-left'>
+        <Row xs={1} sm={2} className='text-left'>
           <Col className='text-dark'>
             <h3 className='aboutTitle'> Get To Know Me!</h3>
             <p className='aboutText'>
             I am a <strong>Software Engineer</strong> with experience in web development, mobile development, scripting, and databases. 
             Check out some of my work in the <a className="text-dark" href="/projects"><strong>projects</strong></a> section. </p>
             <p className='aboutText'>
-            With a solid academic foundation and a genuine passion for learning through my Master's degree in Computer Science from NCSU, I strive to deliver exceptional code.</p>
+            With a solid academic foundation and a genuine passion for learning through my Master's degree in Computer Science from NCSU, I strive to deliver exceptional code.
+            To check out my resume, download it <a className="text-dark" href="../static/Resume28June23.pdf" download="JoshuaLinResume.pdf"><strong>here</strong></a>!</p>
             <p className='aboutText'>
             I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. 
             If you have a good opportunity that matches my skills and experience then don't hesitate to <a className="text-dark" href="/contact"><strong>contact</strong></a> me.</p>
           </Col>
-          <Col className=''>
+          <Col>
             <h3 className='aboutSubTitle'>My Skills</h3>
-            <Row className='d-flex flex-wrap'>
-                <Col className='skill text-wrap'>Java</Col>
+            <Row>
+                <Col className='skill'>Java</Col>
                 <Col className='skill'>C++</Col>
                 <Col className='skill'>JavaScript</Col>
                 <Col className='skill'>Python</Col>
