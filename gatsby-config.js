@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `portfolio`,
-    siteUrl: `https://main.dw0f2i4kppeqc.amplifyapp.com/`
+    siteUrl: `https://portfoliomain31873.gatsbyjs.io/`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
