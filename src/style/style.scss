@@ -56,6 +56,30 @@ $dark: #000000;
 @import "fonts";
 @import "colors"; 
 
+@include media-breakpoint-up(xs) { }
+@include media-breakpoint-up(sm) { }
+@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(xl) { }
+
+@include media-breakpoint-up(md) {
+    .title {
+        font-size: 500%;
+    }
+
+    .aboutText {
+        font-size: 100%;
+    }
+ }
+ 
+ @include media-breakpoint-up(lg) {
+    .title {
+        font-size: 750%;
+    }
+    .aboutText {
+        font-size: 150%;
+    }
+ }
 
 .home {
     background-image: url(../images/plant.jpg);
@@ -65,10 +89,6 @@ $dark: #000000;
 
 body {
     background-color: #eae6e7;
-}
-
-.title {
-    font-size: 500%;
 }
 
 .jobTitle {
@@ -85,10 +105,6 @@ body {
 
 .projectsSubTitle{
     font-size: 125%;
-}
-
-.aboutText {
-    font-size: 18px;
 }
 
 .middle-container {
