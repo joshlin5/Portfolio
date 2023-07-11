@@ -77,12 +77,6 @@ $dark: #000000;
     }
  }
 
-.home {
-    background-image: url(../images/plant.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 body {
     background-color: #eae6e7;
 }
@@ -135,4 +129,10 @@ body {
     padding: 2rem 3rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
+}
+
+#gatsby-focus-wrapper,
+#___gatsby {
+height: 100%;
+width: 100%;
 }

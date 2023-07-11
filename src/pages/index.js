@@ -8,7 +8,7 @@ import '../style/style.scss';
 // Step 2: Define your component
 export default function personalWebsite() {
   return (
-    <body className="home d-flex flex-column text-center min-vh-100 bg-light">
+    <body className="home d-flex flex-column text-center min-vh-100">
       <BNavbar/>
       <Container expand="md" className="my-auto">
         <Row className="justify-content-md-center mt-n2 my-3">
