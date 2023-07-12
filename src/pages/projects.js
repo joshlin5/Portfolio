@@ -12,7 +12,7 @@ export default function projectsPage() {
       <BNavbar/>
       <h1 className='normaltitle text-dark'>Projects</h1>
       <p className='projectsSubTitle text-dark'>Here you will find some of my personal and major academic projects</p>
-      <Container className="justify-content-md-center">
+      <Container className="justify-content-md-center my-4">
         <Row xs={1} sm={2} md={2} lg={3} xl={4} xxl={4} className="d-flex justify-content-md-center g-4">
           <Col className='d-flex'>
             <Card>
